@@ -2,7 +2,7 @@ name: Sync LeetCode Submissions
 
 on:
   schedule:
-    - cron: '0 4 * * *'   # Daily at 12:00 AM EDT (+4 UTC)
+    - cron: '0 4 * * *'   # Daily at 4:00 AM UTC (+4:00 EDT)
   workflow_dispatch:        # Also allow manual trigger
 
 jobs:
@@ -28,9 +28,10 @@ jobs:
           LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
           LEETCODE_CSRF_TOKEN: ${{ secrets.LEETCODE_CSRF_TOKEN }}
           GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           python - <<'EOF'
-          import os, json, time, subprocess, pathlib, re
+          import os, time, subprocess, pathlib, re
           from datetime import datetime, timezone
           import requests
 
@@ -67,22 +68,31 @@ jobs:
               "bash":       "sh",
           }
 
+          # ── Headers — must closely mimic a real browser request ───────────────
           HEADERS = {
-              "Content-Type": "application/json",
-              "Cookie":       f"LEETCODE_SESSION={SESSION}; csrftoken={CSRF_TOKEN}",
-              "x-csrftoken":  CSRF_TOKEN,
-              "Referer":      "https://leetcode.com",
-              "User-Agent":   "Mozilla/5.0",
+              "Content-Type":   "application/json",
+              "Accept":         "application/json",
+              "Origin":         "https://leetcode.com",
+              "Referer":        "https://leetcode.com/submissions/",
+              "User-Agent":     (
+                  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                  "AppleWebKit/537.36 (KHTML, like Gecko) "
+                  "Chrome/120.0.0.0 Safari/537.36"
+              ),
+              "Cookie":         f"LEETCODE_SESSION={SESSION}; csrftoken={CSRF_TOKEN}",
+              "x-csrftoken":    CSRF_TOKEN,
           }
 
           # ── Helpers ───────────────────────────────────────────────────────────
           def graphql(query, variables=None):
               resp = requests.post(
-                  "https://leetcode.com/graphql",
+                  "https://leetcode.com/graphql/",   # trailing slash matters
                   json={"query": query, "variables": variables or {}},
                   headers=HEADERS,
                   timeout=30,
               )
+              if not resp.ok:
+                  print(f"  HTTP {resp.status_code}: {resp.text[:300]}")
               resp.raise_for_status()
               return resp.json()
 
@@ -90,16 +100,27 @@ jobs:
               return re.sub(r"[^\w\-]", "_", name.lower())
 
           def ext_for(lang):
-              key = lang.lower().replace(" ", "").replace("#", "sharp")
-              return LANG_EXT.get(lang.lower().replace(" ", ""), key)
+              return LANG_EXT.get(lang.lower().replace(" ", ""), lang.lower().replace(" ", "").replace("#", "s"))
 
-          def already_synced(filepath):
-              return pathlib.Path(filepath).exists()
+          # ── Validate session first ────────────────────────────────────────────
+          CHECK_QUERY = "{ user { username } }"
+          print("Validating LeetCode session...")
+          try:
+              check = graphql(CHECK_QUERY)
+              username = check.get("data", {}).get("user", {}).get("username")
+              if not username:
+                  print("ERROR: Session invalid or expired. Please refresh LEETCODE_SESSION and LEETCODE_CSRF_TOKEN secrets.")
+                  exit(1)
+              print(f"Logged in as: {username}")
+          except Exception as e:
+              print(f"ERROR: Could not authenticate with LeetCode: {e}")
+              exit(1)
 
-          # ── GraphQL queries ───────────────────────────────────────────────────
+          # ── Fetch accepted submissions (paginated) ────────────────────────────
+          # Note: uses offset/limit pagination
           SUBMISSIONS_QUERY = """
-          query submissions($offset: Int!, $limit: Int!) {
-            submissionList(offset: $offset, limit: $limit, lastKey: null) {
+          query submissionList($offset: Int!, $limit: Int!) {
+            submissionList(offset: $offset, limit: $limit) {
               hasNext
               submissions {
                 id
@@ -114,31 +135,36 @@ jobs:
           """
 
           DETAIL_QUERY = """
-          query submissionDetail($id: Int!) {
-            submissionDetail(submissionId: $id) {
+          query submissionDetails($submissionId: Int!) {
+            submissionDetails(submissionId: $submissionId) {
               code
-              lang
-              runtime
-              memory
+              lang { verboseName }
+              runtimeDisplay
+              memoryDisplay
               question { questionFrontendId title titleSlug difficulty }
             }
           }
           """
 
-          # ── Fetch accepted submissions (latest per problem) ───────────────────
           print("Fetching submissions from LeetCode...")
           all_accepted = []
           seen_slugs   = set()
           offset, limit = 0, 20
 
           while True:
-              data = graphql(SUBMISSIONS_QUERY, {"offset": offset, "limit": limit})
-              page = data["data"]["submissionList"]
-              for sub in page["submissions"]:
+              try:
+                  data = graphql(SUBMISSIONS_QUERY, {"offset": offset, "limit": limit})
+              except Exception as e:
+                  print(f"ERROR fetching submission list: {e}")
+                  exit(1)
+
+              page = data.get("data", {}).get("submissionList", {})
+              for sub in page.get("submissions", []):
                   if sub["statusDisplay"] == "Accepted" and sub["titleSlug"] not in seen_slugs:
                       seen_slugs.add(sub["titleSlug"])
                       all_accepted.append(sub)
-              if not page["hasNext"]:
+
+              if not page.get("hasNext"):
                   break
               offset += limit
               time.sleep(0.5)
@@ -154,20 +180,25 @@ jobs:
               ext   = ext_for(sub["lang"])
               fpath = f"{SUBMISSIONS_DIR}/{slug}.{ext}"
 
-              if already_synced(fpath):
-                  continue
+              if pathlib.Path(fpath).exists():
+                  continue  # already synced
 
               print(f"  Fetching: {sub['title']} ({sub['lang']})")
               try:
-                  detail = graphql(DETAIL_QUERY, {"id": int(sub["id"])})
-                  info   = detail["data"]["submissionDetail"]
-                  code   = info["code"]
-                  q      = info["question"]
+                  detail = graphql(DETAIL_QUERY, {"submissionId": int(sub["id"])})
+                  info   = detail.get("data", {}).get("submissionDetails")
 
-                  # Pick comment style based on file extension
+                  if not info:
+                      print(f"  WARNING: No detail returned for {sub['title']}, skipping.")
+                      continue
+
+                  code = info["code"]
+                  q    = info["question"]
+
+                  # Pick comment style
                   if ext in ("py", "rb", "sh"):
                       c = "#"
-                  elif ext in ("sql",):
+                  elif ext == "sql":
                       c = "--"
                   else:
                       c = "//"
@@ -176,8 +207,8 @@ jobs:
                       f"{c} Problem #{q['questionFrontendId']}: {q['title']}\n"
                       f"{c} Difficulty : {q['difficulty']}\n"
                       f"{c} Language   : {sub['lang']}\n"
-                      f"{c} Runtime    : {info['runtime']}\n"
-                      f"{c} Memory     : {info['memory']}\n"
+                      f"{c} Runtime    : {info['runtimeDisplay']}\n"
+                      f"{c} Memory     : {info['memoryDisplay']}\n"
                       f"{c} URL        : https://leetcode.com/problems/{sub['titleSlug']}/\n\n"
                   )
 
@@ -219,7 +250,7 @@ jobs:
           if has_changes:
               msg = f"sync: add {len(new_files)} new solution(s) [bot]"
               subprocess.run(["git", "commit", "-m", msg], check=True)
-              repo = os.environ.get("GITHUB_REPOSITORY", "")
+              repo  = os.environ.get("GITHUB_REPOSITORY", "")
               token = os.environ["GITHUB_TOKEN"]
               subprocess.run(
                   ["git", "push", f"https://x-access-token:{token}@github.com/{repo}.git"],
