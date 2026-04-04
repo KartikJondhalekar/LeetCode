@@ -1,0 +1,231 @@
+name: Sync LeetCode Submissions
+
+on:
+  schedule:
+    - cron: '0 4 * * *'   # Daily at 12:00 AM EDT (+4 UTC)
+  workflow_dispatch:        # Also allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Sync LeetCode submissions
+        env:
+          LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
+          LEETCODE_CSRF_TOKEN: ${{ secrets.LEETCODE_CSRF_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'EOF'
+          import os, json, time, subprocess, pathlib, re
+          from datetime import datetime, timezone
+          import requests
+
+          # ── Config ────────────────────────────────────────────────────────────
+          SESSION         = os.environ["LEETCODE_SESSION"]
+          CSRF_TOKEN      = os.environ["LEETCODE_CSRF_TOKEN"]
+          SUBMISSIONS_DIR = "submissions"
+
+          # Language -> file extension (add any new language here)
+          LANG_EXT = {
+              "python":     "py",
+              "python3":    "py",
+              "c":          "c",
+              "cpp":        "cpp",
+              "csharp":     "cs",
+              "c#":         "cs",
+              "java":       "java",
+              "javascript": "js",
+              "typescript": "ts",
+              "kotlin":     "kt",
+              "swift":      "swift",
+              "go":         "go",
+              "ruby":       "rb",
+              "scala":      "scala",
+              "rust":       "rs",
+              "php":        "php",
+              "dart":       "dart",
+              "racket":     "rkt",
+              "erlang":     "erl",
+              "elixir":     "ex",
+              "mysql":      "sql",
+              "mssql":      "sql",
+              "oraclesql":  "sql",
+              "bash":       "sh",
+          }
+
+          HEADERS = {
+              "Content-Type": "application/json",
+              "Cookie":       f"LEETCODE_SESSION={SESSION}; csrftoken={CSRF_TOKEN}",
+              "x-csrftoken":  CSRF_TOKEN,
+              "Referer":      "https://leetcode.com",
+              "User-Agent":   "Mozilla/5.0",
+          }
+
+          # ── Helpers ───────────────────────────────────────────────────────────
+          def graphql(query, variables=None):
+              resp = requests.post(
+                  "https://leetcode.com/graphql",
+                  json={"query": query, "variables": variables or {}},
+                  headers=HEADERS,
+                  timeout=30,
+              )
+              resp.raise_for_status()
+              return resp.json()
+
+          def sanitize(name):
+              return re.sub(r"[^\w\-]", "_", name.lower())
+
+          def ext_for(lang):
+              key = lang.lower().replace(" ", "").replace("#", "sharp")
+              return LANG_EXT.get(lang.lower().replace(" ", ""), key)
+
+          def already_synced(filepath):
+              return pathlib.Path(filepath).exists()
+
+          # ── GraphQL queries ───────────────────────────────────────────────────
+          SUBMISSIONS_QUERY = """
+          query submissions($offset: Int!, $limit: Int!) {
+            submissionList(offset: $offset, limit: $limit, lastKey: null) {
+              hasNext
+              submissions {
+                id
+                titleSlug
+                title
+                statusDisplay
+                lang
+                timestamp
+              }
+            }
+          }
+          """
+
+          DETAIL_QUERY = """
+          query submissionDetail($id: Int!) {
+            submissionDetail(submissionId: $id) {
+              code
+              lang
+              runtime
+              memory
+              question { questionFrontendId title titleSlug difficulty }
+            }
+          }
+          """
+
+          # ── Fetch accepted submissions (latest per problem) ───────────────────
+          print("Fetching submissions from LeetCode...")
+          all_accepted = []
+          seen_slugs   = set()
+          offset, limit = 0, 20
+
+          while True:
+              data = graphql(SUBMISSIONS_QUERY, {"offset": offset, "limit": limit})
+              page = data["data"]["submissionList"]
+              for sub in page["submissions"]:
+                  if sub["statusDisplay"] == "Accepted" and sub["titleSlug"] not in seen_slugs:
+                      seen_slugs.add(sub["titleSlug"])
+                      all_accepted.append(sub)
+              if not page["hasNext"]:
+                  break
+              offset += limit
+              time.sleep(0.5)
+
+          print(f"Found {len(all_accepted)} accepted problems.")
+
+          # ── Write new solution files ──────────────────────────────────────────
+          pathlib.Path(SUBMISSIONS_DIR).mkdir(exist_ok=True)
+          new_files = []
+
+          for sub in all_accepted:
+              slug  = sanitize(sub["titleSlug"])
+              ext   = ext_for(sub["lang"])
+              fpath = f"{SUBMISSIONS_DIR}/{slug}.{ext}"
+
+              if already_synced(fpath):
+                  continue
+
+              print(f"  Fetching: {sub['title']} ({sub['lang']})")
+              try:
+                  detail = graphql(DETAIL_QUERY, {"id": int(sub["id"])})
+                  info   = detail["data"]["submissionDetail"]
+                  code   = info["code"]
+                  q      = info["question"]
+
+                  # Pick comment style based on file extension
+                  if ext in ("py", "rb", "sh"):
+                      c = "#"
+                  elif ext in ("sql",):
+                      c = "--"
+                  else:
+                      c = "//"
+
+                  header = (
+                      f"{c} Problem #{q['questionFrontendId']}: {q['title']}\n"
+                      f"{c} Difficulty : {q['difficulty']}\n"
+                      f"{c} Language   : {sub['lang']}\n"
+                      f"{c} Runtime    : {info['runtime']}\n"
+                      f"{c} Memory     : {info['memory']}\n"
+                      f"{c} URL        : https://leetcode.com/problems/{sub['titleSlug']}/\n\n"
+                  )
+
+                  pathlib.Path(fpath).write_text(header + code, encoding="utf-8")
+                  new_files.append((fpath, sub["title"]))
+                  time.sleep(0.3)
+
+              except Exception as e:
+                  print(f"  WARNING: Could not fetch {sub['title']}: {e}")
+                  continue
+
+          if not new_files:
+              print("Nothing new to sync. All up to date.")
+
+          # ── Regenerate README ─────────────────────────────────────────────────
+          all_files = sorted(pathlib.Path(SUBMISSIONS_DIR).glob("*"))
+          total     = len(all_files)
+
+          readme_lines = [
+              "# LeetCode Solutions\n\n",
+              f"Auto-synced via GitHub Actions &middot; **{total} problems solved**\n\n",
+              f"_Last updated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}_\n\n",
+              "| # | Problem | Language |\n",
+              "|---|---------|----------|\n",
+          ]
+          for i, f in enumerate(all_files, 1):
+              lang = f.suffix.lstrip(".")
+              name = f.stem.replace("-", " ").replace("_", " ").title()
+              readme_lines.append(f"| {i} | {name} | `{lang}` |\n")
+
+          pathlib.Path("README.md").write_text("".join(readme_lines), encoding="utf-8")
+
+          # ── Commit and push ───────────────────────────────────────────────────
+          subprocess.run(["git", "config", "user.name",  "github-actions[bot]"], check=True)
+          subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True)
+          subprocess.run(["git", "add", SUBMISSIONS_DIR, "README.md"], check=True)
+
+          has_changes = subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode != 0
+          if has_changes:
+              msg = f"sync: add {len(new_files)} new solution(s) [bot]"
+              subprocess.run(["git", "commit", "-m", msg], check=True)
+              repo = os.environ.get("GITHUB_REPOSITORY", "")
+              token = os.environ["GITHUB_TOKEN"]
+              subprocess.run(
+                  ["git", "push", f"https://x-access-token:{token}@github.com/{repo}.git"],
+                  check=True,
+              )
+              print(f"Done! Pushed {len(new_files)} file(s).")
+          else:
+              print("No changes to commit.")
+          EOF
