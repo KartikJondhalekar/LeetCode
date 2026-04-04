@@ -242,13 +242,13 @@ jobs:
           pathlib.Path("README.md").write_text("".join(readme_lines), encoding="utf-8")
 
           # ── Commit and push ───────────────────────────────────────────────────
-          subprocess.run(["git", "config", "user.name",  "github-actions[bot]"], check=True)
-          subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True)
+          subprocess.run(["git", "config", "user.name",  "github-actions"], check=True)
+          subprocess.run(["git", "config", "user.email", "github-actions@users.noreply.github.com"], check=True)
           subprocess.run(["git", "add", SUBMISSIONS_DIR, "README.md"], check=True)
 
           has_changes = subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode != 0
           if has_changes:
-              msg = f"sync: add {len(new_files)} new solution(s) [bot]"
+              msg = f"sync: add {len(new_files)} new solution(s)"
               subprocess.run(["git", "commit", "-m", msg], check=True)
               repo  = os.environ.get("GITHUB_REPOSITORY", "")
               token = os.environ["GITHUB_TOKEN"]
