@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **82 problems solved**
+Auto-synced via GitHub Actions &middot; **83 problems solved**
 
-_Last updated: 2026-04-05 05:47 UTC_
+_Last updated: 2026-04-06 06:02 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -59,32 +59,33 @@ _Last updated: 2026-04-05 05:47 UTC_
 | 51 | Pascals Triangle | `py` |
 | 52 | Plus One | `py` |
 | 53 | Power Of Three | `py` |
-| 54 | Regular Expression Matching | `py` |
-| 55 | Remove Duplicates From Sorted Array | `py` |
-| 56 | Remove Duplicates From Sorted List | `py` |
-| 57 | Remove Element | `py` |
-| 58 | Remove Nth Node From End Of List | `py` |
-| 59 | Reverse Bits | `py` |
-| 60 | Reverse Integer | `py` |
-| 61 | Reverse Linked List | `py` |
-| 62 | Reverse String | `py` |
-| 63 | Roman To Integer | `py` |
-| 64 | Rotate Array | `py` |
-| 65 | Rotate Image | `py` |
-| 66 | Rotting Oranges | `py` |
-| 67 | Same Tree | `py` |
-| 68 | Search In Rotated Sorted Array | `py` |
-| 69 | Search Insert Position | `py` |
-| 70 | Shuffle An Array | `py` |
-| 71 | Single Number | `py` |
-| 72 | Sqrtx | `py` |
-| 73 | String To Integer Atoi | `py` |
-| 74 | Sudoku Solver | `py` |
-| 75 | Symmetric Tree | `py` |
-| 76 | Top K Frequent Elements | `py` |
-| 77 | Two Sum | `py` |
-| 78 | Valid Anagram | `py` |
-| 79 | Valid Palindrome | `py` |
-| 80 | Valid Parentheses | `py` |
-| 81 | Valid Sudoku | `py` |
-| 82 | Validate Binary Search Tree | `py` |
+| 54 | Product Of Array Except Self | `py` |
+| 55 | Regular Expression Matching | `py` |
+| 56 | Remove Duplicates From Sorted Array | `py` |
+| 57 | Remove Duplicates From Sorted List | `py` |
+| 58 | Remove Element | `py` |
+| 59 | Remove Nth Node From End Of List | `py` |
+| 60 | Reverse Bits | `py` |
+| 61 | Reverse Integer | `py` |
+| 62 | Reverse Linked List | `py` |
+| 63 | Reverse String | `py` |
+| 64 | Roman To Integer | `py` |
+| 65 | Rotate Array | `py` |
+| 66 | Rotate Image | `py` |
+| 67 | Rotting Oranges | `py` |
+| 68 | Same Tree | `py` |
+| 69 | Search In Rotated Sorted Array | `py` |
+| 70 | Search Insert Position | `py` |
+| 71 | Shuffle An Array | `py` |
+| 72 | Single Number | `py` |
+| 73 | Sqrtx | `py` |
+| 74 | String To Integer Atoi | `py` |
+| 75 | Sudoku Solver | `py` |
+| 76 | Symmetric Tree | `py` |
+| 77 | Top K Frequent Elements | `py` |
+| 78 | Two Sum | `py` |
+| 79 | Valid Anagram | `py` |
+| 80 | Valid Palindrome | `py` |
+| 81 | Valid Parentheses | `py` |
+| 82 | Valid Sudoku | `py` |
+| 83 | Validate Binary Search Tree | `py` |
