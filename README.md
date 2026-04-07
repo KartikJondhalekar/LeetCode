@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **83 problems solved**
+Auto-synced via GitHub Actions &middot; **84 problems solved**
 
-_Last updated: 2026-04-06 06:02 UTC_
+_Last updated: 2026-04-07 05:49 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -39,53 +39,54 @@ _Last updated: 2026-04-06 06:02 UTC_
 | 31 | Letter Combinations Of A Phone Number | `py` |
 | 32 | Linked List Cycle | `py` |
 | 33 | Longest Common Prefix | `py` |
-| 34 | Longest Happy String | `cs` |
-| 35 | Longest Palindromic Substring | `py` |
-| 36 | Longest Substring Without Repeating Characters | `py` |
-| 37 | Maximum Depth Of Binary Tree | `py` |
-| 38 | Maximum Subarray | `py` |
-| 39 | Median Of Two Sorted Arrays | `py` |
-| 40 | Merge K Sorted Lists | `py` |
-| 41 | Merge Sorted Array | `py` |
-| 42 | Merge Two Sorted Lists | `py` |
-| 43 | Min Stack | `py` |
-| 44 | Missing Number | `py` |
-| 45 | Move Zeroes | `py` |
-| 46 | Next Permutation | `py` |
-| 47 | Number Of 1 Bits | `py` |
-| 48 | Number Of Steps To Reduce A Number In Binary Representation To One | `cs` |
-| 49 | Palindrome Linked List | `py` |
-| 50 | Palindrome Number | `py` |
-| 51 | Pascals Triangle | `py` |
-| 52 | Plus One | `py` |
-| 53 | Power Of Three | `py` |
-| 54 | Product Of Array Except Self | `py` |
-| 55 | Regular Expression Matching | `py` |
-| 56 | Remove Duplicates From Sorted Array | `py` |
-| 57 | Remove Duplicates From Sorted List | `py` |
-| 58 | Remove Element | `py` |
-| 59 | Remove Nth Node From End Of List | `py` |
-| 60 | Reverse Bits | `py` |
-| 61 | Reverse Integer | `py` |
-| 62 | Reverse Linked List | `py` |
-| 63 | Reverse String | `py` |
-| 64 | Roman To Integer | `py` |
-| 65 | Rotate Array | `py` |
-| 66 | Rotate Image | `py` |
-| 67 | Rotting Oranges | `py` |
-| 68 | Same Tree | `py` |
-| 69 | Search In Rotated Sorted Array | `py` |
-| 70 | Search Insert Position | `py` |
-| 71 | Shuffle An Array | `py` |
-| 72 | Single Number | `py` |
-| 73 | Sqrtx | `py` |
-| 74 | String To Integer Atoi | `py` |
-| 75 | Sudoku Solver | `py` |
-| 76 | Symmetric Tree | `py` |
-| 77 | Top K Frequent Elements | `py` |
-| 78 | Two Sum | `py` |
-| 79 | Valid Anagram | `py` |
-| 80 | Valid Palindrome | `py` |
-| 81 | Valid Parentheses | `py` |
-| 82 | Valid Sudoku | `py` |
-| 83 | Validate Binary Search Tree | `py` |
+| 34 | Longest Consecutive Sequence | `py` |
+| 35 | Longest Happy String | `cs` |
+| 36 | Longest Palindromic Substring | `py` |
+| 37 | Longest Substring Without Repeating Characters | `py` |
+| 38 | Maximum Depth Of Binary Tree | `py` |
+| 39 | Maximum Subarray | `py` |
+| 40 | Median Of Two Sorted Arrays | `py` |
+| 41 | Merge K Sorted Lists | `py` |
+| 42 | Merge Sorted Array | `py` |
+| 43 | Merge Two Sorted Lists | `py` |
+| 44 | Min Stack | `py` |
+| 45 | Missing Number | `py` |
+| 46 | Move Zeroes | `py` |
+| 47 | Next Permutation | `py` |
+| 48 | Number Of 1 Bits | `py` |
+| 49 | Number Of Steps To Reduce A Number In Binary Representation To One | `cs` |
+| 50 | Palindrome Linked List | `py` |
+| 51 | Palindrome Number | `py` |
+| 52 | Pascals Triangle | `py` |
+| 53 | Plus One | `py` |
+| 54 | Power Of Three | `py` |
+| 55 | Product Of Array Except Self | `py` |
+| 56 | Regular Expression Matching | `py` |
+| 57 | Remove Duplicates From Sorted Array | `py` |
+| 58 | Remove Duplicates From Sorted List | `py` |
+| 59 | Remove Element | `py` |
+| 60 | Remove Nth Node From End Of List | `py` |
+| 61 | Reverse Bits | `py` |
+| 62 | Reverse Integer | `py` |
+| 63 | Reverse Linked List | `py` |
+| 64 | Reverse String | `py` |
+| 65 | Roman To Integer | `py` |
+| 66 | Rotate Array | `py` |
+| 67 | Rotate Image | `py` |
+| 68 | Rotting Oranges | `py` |
+| 69 | Same Tree | `py` |
+| 70 | Search In Rotated Sorted Array | `py` |
+| 71 | Search Insert Position | `py` |
+| 72 | Shuffle An Array | `py` |
+| 73 | Single Number | `py` |
+| 74 | Sqrtx | `py` |
+| 75 | String To Integer Atoi | `py` |
+| 76 | Sudoku Solver | `py` |
+| 77 | Symmetric Tree | `py` |
+| 78 | Top K Frequent Elements | `py` |
+| 79 | Two Sum | `py` |
+| 80 | Valid Anagram | `py` |
+| 81 | Valid Palindrome | `py` |
+| 82 | Valid Parentheses | `py` |
+| 83 | Valid Sudoku | `py` |
+| 84 | Validate Binary Search Tree | `py` |
