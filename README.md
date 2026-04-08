@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **84 problems solved**
+Auto-synced via GitHub Actions &middot; **85 problems solved**
 
-_Last updated: 2026-04-07 05:49 UTC_
+_Last updated: 2026-04-08 05:50 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -25,68 +25,69 @@ _Last updated: 2026-04-07 05:49 UTC_
 | 17 | Count Primes | `py` |
 | 18 | Delete Node In A Linked List | `py` |
 | 19 | Distinct Subsequences | `py` |
-| 20 | Find First And Last Position Of Element In Sorted Array | `py` |
-| 21 | Find The Index Of The First Occurrence In A String | `py` |
-| 22 | First Bad Version | `py` |
-| 23 | First Unique Character In A String | `py` |
-| 24 | Fizz Buzz | `py` |
-| 25 | Generate Parentheses | `py` |
-| 26 | Group Anagrams | `py` |
-| 27 | Hamming Distance | `py` |
-| 28 | House Robber | `py` |
-| 29 | Intersection Of Two Arrays Ii | `py` |
-| 30 | Length Of Last Word | `py` |
-| 31 | Letter Combinations Of A Phone Number | `py` |
-| 32 | Linked List Cycle | `py` |
-| 33 | Longest Common Prefix | `py` |
-| 34 | Longest Consecutive Sequence | `py` |
-| 35 | Longest Happy String | `cs` |
-| 36 | Longest Palindromic Substring | `py` |
-| 37 | Longest Substring Without Repeating Characters | `py` |
-| 38 | Maximum Depth Of Binary Tree | `py` |
-| 39 | Maximum Subarray | `py` |
-| 40 | Median Of Two Sorted Arrays | `py` |
-| 41 | Merge K Sorted Lists | `py` |
-| 42 | Merge Sorted Array | `py` |
-| 43 | Merge Two Sorted Lists | `py` |
-| 44 | Min Stack | `py` |
-| 45 | Missing Number | `py` |
-| 46 | Move Zeroes | `py` |
-| 47 | Next Permutation | `py` |
-| 48 | Number Of 1 Bits | `py` |
-| 49 | Number Of Steps To Reduce A Number In Binary Representation To One | `cs` |
-| 50 | Palindrome Linked List | `py` |
-| 51 | Palindrome Number | `py` |
-| 52 | Pascals Triangle | `py` |
-| 53 | Plus One | `py` |
-| 54 | Power Of Three | `py` |
-| 55 | Product Of Array Except Self | `py` |
-| 56 | Regular Expression Matching | `py` |
-| 57 | Remove Duplicates From Sorted Array | `py` |
-| 58 | Remove Duplicates From Sorted List | `py` |
-| 59 | Remove Element | `py` |
-| 60 | Remove Nth Node From End Of List | `py` |
-| 61 | Reverse Bits | `py` |
-| 62 | Reverse Integer | `py` |
-| 63 | Reverse Linked List | `py` |
-| 64 | Reverse String | `py` |
-| 65 | Roman To Integer | `py` |
-| 66 | Rotate Array | `py` |
-| 67 | Rotate Image | `py` |
-| 68 | Rotting Oranges | `py` |
-| 69 | Same Tree | `py` |
-| 70 | Search In Rotated Sorted Array | `py` |
-| 71 | Search Insert Position | `py` |
-| 72 | Shuffle An Array | `py` |
-| 73 | Single Number | `py` |
-| 74 | Sqrtx | `py` |
-| 75 | String To Integer Atoi | `py` |
-| 76 | Sudoku Solver | `py` |
-| 77 | Symmetric Tree | `py` |
-| 78 | Top K Frequent Elements | `py` |
-| 79 | Two Sum | `py` |
-| 80 | Valid Anagram | `py` |
-| 81 | Valid Palindrome | `py` |
-| 82 | Valid Parentheses | `py` |
-| 83 | Valid Sudoku | `py` |
-| 84 | Validate Binary Search Tree | `py` |
+| 20 | Evaluate Reverse Polish Notation | `py` |
+| 21 | Find First And Last Position Of Element In Sorted Array | `py` |
+| 22 | Find The Index Of The First Occurrence In A String | `py` |
+| 23 | First Bad Version | `py` |
+| 24 | First Unique Character In A String | `py` |
+| 25 | Fizz Buzz | `py` |
+| 26 | Generate Parentheses | `py` |
+| 27 | Group Anagrams | `py` |
+| 28 | Hamming Distance | `py` |
+| 29 | House Robber | `py` |
+| 30 | Intersection Of Two Arrays Ii | `py` |
+| 31 | Length Of Last Word | `py` |
+| 32 | Letter Combinations Of A Phone Number | `py` |
+| 33 | Linked List Cycle | `py` |
+| 34 | Longest Common Prefix | `py` |
+| 35 | Longest Consecutive Sequence | `py` |
+| 36 | Longest Happy String | `cs` |
+| 37 | Longest Palindromic Substring | `py` |
+| 38 | Longest Substring Without Repeating Characters | `py` |
+| 39 | Maximum Depth Of Binary Tree | `py` |
+| 40 | Maximum Subarray | `py` |
+| 41 | Median Of Two Sorted Arrays | `py` |
+| 42 | Merge K Sorted Lists | `py` |
+| 43 | Merge Sorted Array | `py` |
+| 44 | Merge Two Sorted Lists | `py` |
+| 45 | Min Stack | `py` |
+| 46 | Missing Number | `py` |
+| 47 | Move Zeroes | `py` |
+| 48 | Next Permutation | `py` |
+| 49 | Number Of 1 Bits | `py` |
+| 50 | Number Of Steps To Reduce A Number In Binary Representation To One | `cs` |
+| 51 | Palindrome Linked List | `py` |
+| 52 | Palindrome Number | `py` |
+| 53 | Pascals Triangle | `py` |
+| 54 | Plus One | `py` |
+| 55 | Power Of Three | `py` |
+| 56 | Product Of Array Except Self | `py` |
+| 57 | Regular Expression Matching | `py` |
+| 58 | Remove Duplicates From Sorted Array | `py` |
+| 59 | Remove Duplicates From Sorted List | `py` |
+| 60 | Remove Element | `py` |
+| 61 | Remove Nth Node From End Of List | `py` |
+| 62 | Reverse Bits | `py` |
+| 63 | Reverse Integer | `py` |
+| 64 | Reverse Linked List | `py` |
+| 65 | Reverse String | `py` |
+| 66 | Roman To Integer | `py` |
+| 67 | Rotate Array | `py` |
+| 68 | Rotate Image | `py` |
+| 69 | Rotting Oranges | `py` |
+| 70 | Same Tree | `py` |
+| 71 | Search In Rotated Sorted Array | `py` |
+| 72 | Search Insert Position | `py` |
+| 73 | Shuffle An Array | `py` |
+| 74 | Single Number | `py` |
+| 75 | Sqrtx | `py` |
+| 76 | String To Integer Atoi | `py` |
+| 77 | Sudoku Solver | `py` |
+| 78 | Symmetric Tree | `py` |
+| 79 | Top K Frequent Elements | `py` |
+| 80 | Two Sum | `py` |
+| 81 | Valid Anagram | `py` |
+| 82 | Valid Palindrome | `py` |
+| 83 | Valid Parentheses | `py` |
+| 84 | Valid Sudoku | `py` |
+| 85 | Validate Binary Search Tree | `py` |
