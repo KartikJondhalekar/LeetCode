@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **92 problems solved**
+Auto-synced via GitHub Actions &middot; **93 problems solved**
 
-_Last updated: 2026-04-13 06:20 UTC_
+_Last updated: 2026-04-14 06:03 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -55,46 +55,47 @@ _Last updated: 2026-04-13 06:20 UTC_
 | 47 | Merge Sorted Array | `py` |
 | 48 | Merge Two Sorted Lists | `py` |
 | 49 | Min Stack | `py` |
-| 50 | Missing Number | `py` |
-| 51 | Move Zeroes | `py` |
-| 52 | Next Permutation | `py` |
-| 53 | Number Of 1 Bits | `py` |
-| 54 | Number Of Steps To Reduce A Number In Binary Representation To One | `cs` |
-| 55 | Palindrome Linked List | `py` |
-| 56 | Palindrome Number | `py` |
-| 57 | Pascals Triangle | `py` |
-| 58 | Permutation In String | `py` |
-| 59 | Plus One | `py` |
-| 60 | Power Of Three | `py` |
-| 61 | Product Of Array Except Self | `py` |
-| 62 | Regular Expression Matching | `py` |
-| 63 | Remove Duplicates From Sorted Array | `py` |
-| 64 | Remove Duplicates From Sorted List | `py` |
-| 65 | Remove Element | `py` |
-| 66 | Remove Nth Node From End Of List | `py` |
-| 67 | Reverse Bits | `py` |
-| 68 | Reverse Integer | `py` |
-| 69 | Reverse Linked List | `py` |
-| 70 | Reverse String | `py` |
-| 71 | Roman To Integer | `py` |
-| 72 | Rotate Array | `py` |
-| 73 | Rotate Image | `py` |
-| 74 | Rotting Oranges | `py` |
-| 75 | Same Tree | `py` |
-| 76 | Search In Rotated Sorted Array | `py` |
-| 77 | Search Insert Position | `py` |
-| 78 | Shuffle An Array | `py` |
-| 79 | Single Number | `py` |
-| 80 | Sqrtx | `py` |
-| 81 | String To Integer Atoi | `py` |
-| 82 | Sudoku Solver | `py` |
-| 83 | Symmetric Tree | `py` |
-| 84 | Top K Frequent Elements | `py` |
-| 85 | Trapping Rain Water | `py` |
-| 86 | Two Sum Ii Input Array Is Sorted | `py` |
-| 87 | Two Sum | `py` |
-| 88 | Valid Anagram | `py` |
-| 89 | Valid Palindrome | `py` |
-| 90 | Valid Parentheses | `py` |
-| 91 | Valid Sudoku | `py` |
-| 92 | Validate Binary Search Tree | `py` |
+| 50 | Minimum Window Substring | `py` |
+| 51 | Missing Number | `py` |
+| 52 | Move Zeroes | `py` |
+| 53 | Next Permutation | `py` |
+| 54 | Number Of 1 Bits | `py` |
+| 55 | Number Of Steps To Reduce A Number In Binary Representation To One | `cs` |
+| 56 | Palindrome Linked List | `py` |
+| 57 | Palindrome Number | `py` |
+| 58 | Pascals Triangle | `py` |
+| 59 | Permutation In String | `py` |
+| 60 | Plus One | `py` |
+| 61 | Power Of Three | `py` |
+| 62 | Product Of Array Except Self | `py` |
+| 63 | Regular Expression Matching | `py` |
+| 64 | Remove Duplicates From Sorted Array | `py` |
+| 65 | Remove Duplicates From Sorted List | `py` |
+| 66 | Remove Element | `py` |
+| 67 | Remove Nth Node From End Of List | `py` |
+| 68 | Reverse Bits | `py` |
+| 69 | Reverse Integer | `py` |
+| 70 | Reverse Linked List | `py` |
+| 71 | Reverse String | `py` |
+| 72 | Roman To Integer | `py` |
+| 73 | Rotate Array | `py` |
+| 74 | Rotate Image | `py` |
+| 75 | Rotting Oranges | `py` |
+| 76 | Same Tree | `py` |
+| 77 | Search In Rotated Sorted Array | `py` |
+| 78 | Search Insert Position | `py` |
+| 79 | Shuffle An Array | `py` |
+| 80 | Single Number | `py` |
+| 81 | Sqrtx | `py` |
+| 82 | String To Integer Atoi | `py` |
+| 83 | Sudoku Solver | `py` |
+| 84 | Symmetric Tree | `py` |
+| 85 | Top K Frequent Elements | `py` |
+| 86 | Trapping Rain Water | `py` |
+| 87 | Two Sum Ii Input Array Is Sorted | `py` |
+| 88 | Two Sum | `py` |
+| 89 | Valid Anagram | `py` |
+| 90 | Valid Palindrome | `py` |
+| 91 | Valid Parentheses | `py` |
+| 92 | Valid Sudoku | `py` |
+| 93 | Validate Binary Search Tree | `py` |
