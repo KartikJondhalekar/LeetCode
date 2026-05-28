@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **104 problems solved**
+Auto-synced via GitHub Actions &middot; **105 problems solved**
 
-_Last updated: 2026-05-27 08:07 UTC_
+_Last updated: 2026-05-28 08:05 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -84,29 +84,30 @@ _Last updated: 2026-05-27 08:07 UTC_
 | 76 | Reverse Bits | `py` |
 | 77 | Reverse Integer | `py` |
 | 78 | Reverse Linked List | `py` |
-| 79 | Reverse String | `py` |
-| 80 | Roman To Integer | `py` |
-| 81 | Rotate Array | `py` |
-| 82 | Rotate Image | `py` |
-| 83 | Rotting Oranges | `py` |
-| 84 | Same Tree | `py` |
-| 85 | Search A 2D Matrix | `py` |
-| 86 | Search In Rotated Sorted Array | `py` |
-| 87 | Search Insert Position | `py` |
-| 88 | Shuffle An Array | `py` |
-| 89 | Single Number | `py` |
-| 90 | Sliding Window Maximum | `py` |
-| 91 | Sqrtx | `py` |
-| 92 | String To Integer Atoi | `py` |
-| 93 | Sudoku Solver | `py` |
-| 94 | Symmetric Tree | `py` |
-| 95 | Time Based Key Value Store | `py` |
-| 96 | Top K Frequent Elements | `py` |
-| 97 | Trapping Rain Water | `py` |
-| 98 | Two Sum Ii Input Array Is Sorted | `py` |
-| 99 | Two Sum | `py` |
-| 100 | Valid Anagram | `py` |
-| 101 | Valid Palindrome | `py` |
-| 102 | Valid Parentheses | `py` |
-| 103 | Valid Sudoku | `py` |
-| 104 | Validate Binary Search Tree | `py` |
+| 79 | Reverse Nodes In K Group | `py` |
+| 80 | Reverse String | `py` |
+| 81 | Roman To Integer | `py` |
+| 82 | Rotate Array | `py` |
+| 83 | Rotate Image | `py` |
+| 84 | Rotting Oranges | `py` |
+| 85 | Same Tree | `py` |
+| 86 | Search A 2D Matrix | `py` |
+| 87 | Search In Rotated Sorted Array | `py` |
+| 88 | Search Insert Position | `py` |
+| 89 | Shuffle An Array | `py` |
+| 90 | Single Number | `py` |
+| 91 | Sliding Window Maximum | `py` |
+| 92 | Sqrtx | `py` |
+| 93 | String To Integer Atoi | `py` |
+| 94 | Sudoku Solver | `py` |
+| 95 | Symmetric Tree | `py` |
+| 96 | Time Based Key Value Store | `py` |
+| 97 | Top K Frequent Elements | `py` |
+| 98 | Trapping Rain Water | `py` |
+| 99 | Two Sum Ii Input Array Is Sorted | `py` |
+| 100 | Two Sum | `py` |
+| 101 | Valid Anagram | `py` |
+| 102 | Valid Palindrome | `py` |
+| 103 | Valid Parentheses | `py` |
+| 104 | Valid Sudoku | `py` |
+| 105 | Validate Binary Search Tree | `py` |
