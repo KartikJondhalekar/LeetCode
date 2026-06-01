@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **108 problems solved**
+Auto-synced via GitHub Actions &middot; **109 problems solved**
 
-_Last updated: 2026-05-31 07:49 UTC_
+_Last updated: 2026-06-01 09:30 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -102,15 +102,16 @@ _Last updated: 2026-05-31 07:49 UTC_
 | 94 | Sliding Window Maximum | `py` |
 | 95 | Sqrtx | `py` |
 | 96 | String To Integer Atoi | `py` |
-| 97 | Sudoku Solver | `py` |
-| 98 | Symmetric Tree | `py` |
-| 99 | Time Based Key Value Store | `py` |
-| 100 | Top K Frequent Elements | `py` |
-| 101 | Trapping Rain Water | `py` |
-| 102 | Two Sum Ii Input Array Is Sorted | `py` |
-| 103 | Two Sum | `py` |
-| 104 | Valid Anagram | `py` |
-| 105 | Valid Palindrome | `py` |
-| 106 | Valid Parentheses | `py` |
-| 107 | Valid Sudoku | `py` |
-| 108 | Validate Binary Search Tree | `py` |
+| 97 | Subtree Of Another Tree | `py` |
+| 98 | Sudoku Solver | `py` |
+| 99 | Symmetric Tree | `py` |
+| 100 | Time Based Key Value Store | `py` |
+| 101 | Top K Frequent Elements | `py` |
+| 102 | Trapping Rain Water | `py` |
+| 103 | Two Sum Ii Input Array Is Sorted | `py` |
+| 104 | Two Sum | `py` |
+| 105 | Valid Anagram | `py` |
+| 106 | Valid Palindrome | `py` |
+| 107 | Valid Parentheses | `py` |
+| 108 | Valid Sudoku | `py` |
+| 109 | Validate Binary Search Tree | `py` |
