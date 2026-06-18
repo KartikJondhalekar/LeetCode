@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **122 problems solved**
+Auto-synced via GitHub Actions &middot; **123 problems solved**
 
-_Last updated: 2026-06-17 09:05 UTC_
+_Last updated: 2026-06-18 08:53 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -117,14 +117,15 @@ _Last updated: 2026-06-17 09:05 UTC_
 | 109 | Subtree Of Another Tree | `py` |
 | 110 | Sudoku Solver | `py` |
 | 111 | Symmetric Tree | `py` |
-| 112 | Time Based Key Value Store | `py` |
-| 113 | Top K Frequent Elements | `py` |
-| 114 | Trapping Rain Water | `py` |
-| 115 | Two Sum Ii Input Array Is Sorted | `py` |
-| 116 | Two Sum | `py` |
-| 117 | Valid Anagram | `py` |
-| 118 | Valid Palindrome | `py` |
-| 119 | Valid Parentheses | `py` |
-| 120 | Valid Sudoku | `py` |
-| 121 | Validate Binary Search Tree | `py` |
-| 122 | Word Search Ii | `py` |
+| 112 | Task Scheduler | `py` |
+| 113 | Time Based Key Value Store | `py` |
+| 114 | Top K Frequent Elements | `py` |
+| 115 | Trapping Rain Water | `py` |
+| 116 | Two Sum Ii Input Array Is Sorted | `py` |
+| 117 | Two Sum | `py` |
+| 118 | Valid Anagram | `py` |
+| 119 | Valid Palindrome | `py` |
+| 120 | Valid Parentheses | `py` |
+| 121 | Valid Sudoku | `py` |
+| 122 | Validate Binary Search Tree | `py` |
+| 123 | Word Search Ii | `py` |
