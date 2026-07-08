@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **138 problems solved**
+Auto-synced via GitHub Actions &middot; **139 problems solved**
 
-_Last updated: 2026-07-07 07:47 UTC_
+_Last updated: 2026-07-08 06:33 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -130,17 +130,18 @@ _Last updated: 2026-07-07 07:47 UTC_
 | 122 | Subsets | `py` |
 | 123 | Subtree Of Another Tree | `py` |
 | 124 | Sudoku Solver | `py` |
-| 125 | Symmetric Tree | `py` |
-| 126 | Task Scheduler | `py` |
-| 127 | Time Based Key Value Store | `py` |
-| 128 | Top K Frequent Elements | `py` |
-| 129 | Trapping Rain Water | `py` |
-| 130 | Two Sum Ii Input Array Is Sorted | `py` |
-| 131 | Two Sum | `py` |
-| 132 | Valid Anagram | `py` |
-| 133 | Valid Palindrome | `py` |
-| 134 | Valid Parentheses | `py` |
-| 135 | Valid Sudoku | `py` |
-| 136 | Validate Binary Search Tree | `py` |
-| 137 | Word Search Ii | `py` |
-| 138 | Word Search | `py` |
+| 125 | Surrounded Regions | `py` |
+| 126 | Symmetric Tree | `py` |
+| 127 | Task Scheduler | `py` |
+| 128 | Time Based Key Value Store | `py` |
+| 129 | Top K Frequent Elements | `py` |
+| 130 | Trapping Rain Water | `py` |
+| 131 | Two Sum Ii Input Array Is Sorted | `py` |
+| 132 | Two Sum | `py` |
+| 133 | Valid Anagram | `py` |
+| 134 | Valid Palindrome | `py` |
+| 135 | Valid Parentheses | `py` |
+| 136 | Valid Sudoku | `py` |
+| 137 | Validate Binary Search Tree | `py` |
+| 138 | Word Search Ii | `py` |
+| 139 | Word Search | `py` |
