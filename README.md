@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **144 problems solved**
+Auto-synced via GitHub Actions &middot; **145 problems solved**
 
-_Last updated: 2026-07-18 06:09 UTC_
+_Last updated: 2026-07-19 06:35 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -99,54 +99,55 @@ _Last updated: 2026-07-18 06:09 UTC_
 | 91 | Palindrome Linked List | `py` |
 | 92 | Palindrome Number | `py` |
 | 93 | Palindrome Partitioning | `py` |
-| 94 | Pascals Triangle | `py` |
-| 95 | Permutation In String | `py` |
-| 96 | Permutations | `py` |
-| 97 | Plus One | `py` |
-| 98 | Power Of Three | `py` |
-| 99 | Product Of Array Except Self | `py` |
-| 100 | Redundant Connection | `py` |
-| 101 | Regular Expression Matching | `py` |
-| 102 | Remove Duplicates From Sorted Array | `py` |
-| 103 | Remove Duplicates From Sorted List | `py` |
-| 104 | Remove Element | `py` |
-| 105 | Remove Nth Node From End Of List | `py` |
-| 106 | Reorder List | `py` |
-| 107 | Reverse Bits | `py` |
-| 108 | Reverse Integer | `py` |
-| 109 | Reverse Linked List | `py` |
-| 110 | Reverse Nodes In K Group | `py` |
-| 111 | Reverse String | `py` |
-| 112 | Roman To Integer | `py` |
-| 113 | Rotate Array | `py` |
-| 114 | Rotate Image | `py` |
-| 115 | Rotting Oranges | `py` |
-| 116 | Same Tree | `py` |
-| 117 | Search A 2D Matrix | `py` |
-| 118 | Search In Rotated Sorted Array | `py` |
-| 119 | Search Insert Position | `py` |
-| 120 | Serialize And Deserialize Binary Tree | `py` |
-| 121 | Shuffle An Array | `py` |
-| 122 | Single Number | `py` |
-| 123 | Sliding Window Maximum | `py` |
-| 124 | Sqrtx | `py` |
-| 125 | String To Integer Atoi | `py` |
-| 126 | Subsets Ii | `py` |
-| 127 | Subsets | `py` |
-| 128 | Subtree Of Another Tree | `py` |
-| 129 | Sudoku Solver | `py` |
-| 130 | Surrounded Regions | `py` |
-| 131 | Symmetric Tree | `py` |
-| 132 | Task Scheduler | `py` |
-| 133 | Time Based Key Value Store | `py` |
-| 134 | Top K Frequent Elements | `py` |
-| 135 | Trapping Rain Water | `py` |
-| 136 | Two Sum Ii Input Array Is Sorted | `py` |
-| 137 | Two Sum | `py` |
-| 138 | Valid Anagram | `py` |
-| 139 | Valid Palindrome | `py` |
-| 140 | Valid Parentheses | `py` |
-| 141 | Valid Sudoku | `py` |
-| 142 | Validate Binary Search Tree | `py` |
-| 143 | Word Search Ii | `py` |
-| 144 | Word Search | `py` |
+| 94 | Palindromic Substrings | `py` |
+| 95 | Pascals Triangle | `py` |
+| 96 | Permutation In String | `py` |
+| 97 | Permutations | `py` |
+| 98 | Plus One | `py` |
+| 99 | Power Of Three | `py` |
+| 100 | Product Of Array Except Self | `py` |
+| 101 | Redundant Connection | `py` |
+| 102 | Regular Expression Matching | `py` |
+| 103 | Remove Duplicates From Sorted Array | `py` |
+| 104 | Remove Duplicates From Sorted List | `py` |
+| 105 | Remove Element | `py` |
+| 106 | Remove Nth Node From End Of List | `py` |
+| 107 | Reorder List | `py` |
+| 108 | Reverse Bits | `py` |
+| 109 | Reverse Integer | `py` |
+| 110 | Reverse Linked List | `py` |
+| 111 | Reverse Nodes In K Group | `py` |
+| 112 | Reverse String | `py` |
+| 113 | Roman To Integer | `py` |
+| 114 | Rotate Array | `py` |
+| 115 | Rotate Image | `py` |
+| 116 | Rotting Oranges | `py` |
+| 117 | Same Tree | `py` |
+| 118 | Search A 2D Matrix | `py` |
+| 119 | Search In Rotated Sorted Array | `py` |
+| 120 | Search Insert Position | `py` |
+| 121 | Serialize And Deserialize Binary Tree | `py` |
+| 122 | Shuffle An Array | `py` |
+| 123 | Single Number | `py` |
+| 124 | Sliding Window Maximum | `py` |
+| 125 | Sqrtx | `py` |
+| 126 | String To Integer Atoi | `py` |
+| 127 | Subsets Ii | `py` |
+| 128 | Subsets | `py` |
+| 129 | Subtree Of Another Tree | `py` |
+| 130 | Sudoku Solver | `py` |
+| 131 | Surrounded Regions | `py` |
+| 132 | Symmetric Tree | `py` |
+| 133 | Task Scheduler | `py` |
+| 134 | Time Based Key Value Store | `py` |
+| 135 | Top K Frequent Elements | `py` |
+| 136 | Trapping Rain Water | `py` |
+| 137 | Two Sum Ii Input Array Is Sorted | `py` |
+| 138 | Two Sum | `py` |
+| 139 | Valid Anagram | `py` |
+| 140 | Valid Palindrome | `py` |
+| 141 | Valid Parentheses | `py` |
+| 142 | Valid Sudoku | `py` |
+| 143 | Validate Binary Search Tree | `py` |
+| 144 | Word Search Ii | `py` |
+| 145 | Word Search | `py` |
