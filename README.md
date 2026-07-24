@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **148 problems solved**
+Auto-synced via GitHub Actions &middot; **149 problems solved**
 
-_Last updated: 2026-07-23 06:34 UTC_
+_Last updated: 2026-07-24 06:30 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -152,5 +152,6 @@ _Last updated: 2026-07-23 06:34 UTC_
 | 144 | Valid Parentheses | `py` |
 | 145 | Valid Sudoku | `py` |
 | 146 | Validate Binary Search Tree | `py` |
-| 147 | Word Search Ii | `py` |
-| 148 | Word Search | `py` |
+| 147 | Word Break | `py` |
+| 148 | Word Search Ii | `py` |
+| 149 | Word Search | `py` |
