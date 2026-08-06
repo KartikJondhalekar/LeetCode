@@ -1,0 +1,16 @@
+# Problem #55: Jump Game
+# Difficulty : Medium
+# Language   : python3
+# Runtime    : 7 ms
+# Memory     : 20.1 MB
+# URL        : https://leetcode.com/problems/jump-game/
+
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        goal = len(nums) - 1
+
+        for i in range(len(nums) - 1, -1, -1):
+            if i + nums[i] >= goal:
+                goal = i
+
+        return goal == 0 

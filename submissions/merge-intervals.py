@@ -1,0 +1,24 @@
+# Problem #56: Merge Intervals
+# Difficulty : Medium
+# Language   : python3
+# Runtime    : 0 ms
+# Memory     : 23 MB
+# URL        : https://leetcode.com/problems/merge-intervals/
+
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        if len(intervals) < 2:
+            return intervals
+
+        intervals.sort(key = lambda i : i[0])
+        res = [intervals[0]]
+
+        for start, end in intervals[1:]:
+            lastEnd = res[-1][1]
+
+            if start <= lastEnd:
+                res[-1][1] = max(end, lastEnd)
+            else:
+                res.append([start, end])
+
+        return res
