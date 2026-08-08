@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **158 problems solved**
+Auto-synced via GitHub Actions &middot; **159 problems solved**
 
-_Last updated: 2026-08-07 05:44 UTC_
+_Last updated: 2026-08-08 05:02 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -57,110 +57,111 @@ _Last updated: 2026-08-07 05:44 UTC_
 | 49 | Generate Parentheses | `py` |
 | 50 | Group Anagrams | `py` |
 | 51 | Hamming Distance | `py` |
-| 52 | House Robber Ii | `py` |
-| 53 | House Robber | `py` |
-| 54 | Implement Trie Prefix Tree | `py` |
-| 55 | Insert Interval | `py` |
-| 56 | Intersection Of Two Arrays Ii | `py` |
-| 57 | Invert Binary Tree | `py` |
-| 58 | Jump Game Ii | `py` |
-| 59 | Jump Game | `py` |
-| 60 | K Closest Points To Origin | `py` |
-| 61 | Koko Eating Bananas | `py` |
-| 62 | Kth Largest Element In A Stream | `py` |
-| 63 | Kth Largest Element In An Array | `py` |
-| 64 | Kth Smallest Element In A Bst | `py` |
-| 65 | Largest Rectangle In Histogram | `py` |
-| 66 | Last Stone Weight | `py` |
-| 67 | Length Of Last Word | `py` |
-| 68 | Letter Combinations Of A Phone Number | `py` |
-| 69 | Linked List Cycle | `py` |
-| 70 | Longest Common Prefix | `py` |
-| 71 | Longest Consecutive Sequence | `py` |
-| 72 | Longest Happy String | `cs` |
-| 73 | Longest Increasing Subsequence | `py` |
-| 74 | Longest Palindromic Substring | `py` |
-| 75 | Longest Repeating Character Replacement | `py` |
-| 76 | Longest Substring Without Repeating Characters | `py` |
-| 77 | Lowest Common Ancestor Of A Binary Search Tree | `py` |
-| 78 | Lru Cache | `py` |
-| 79 | Max Area Of Island | `py` |
-| 80 | Maximum Depth Of Binary Tree | `py` |
-| 81 | Maximum Product Subarray | `py` |
-| 82 | Maximum Subarray | `py` |
-| 83 | Median Of Two Sorted Arrays | `py` |
-| 84 | Merge Intervals | `py` |
-| 85 | Merge K Sorted Lists | `py` |
-| 86 | Merge Sorted Array | `py` |
-| 87 | Merge Two Sorted Lists | `py` |
-| 88 | Min Cost Climbing Stairs | `py` |
-| 89 | Min Stack | `py` |
-| 90 | Minimum Interval To Include Each Query | `py` |
-| 91 | Minimum Window Substring | `py` |
-| 92 | Missing Number | `py` |
-| 93 | Move Zeroes | `py` |
-| 94 | N Queens | `py` |
-| 95 | Next Permutation | `py` |
-| 96 | Non Decreasing Array | `py` |
-| 97 | Non Overlapping Intervals | `py` |
-| 98 | Number Of 1 Bits | `py` |
-| 99 | Number Of Islands | `py` |
-| 100 | Number Of Steps To Reduce A Number In Binary Representation To One | `cs` |
-| 101 | Pacific Atlantic Water Flow | `py` |
-| 102 | Palindrome Linked List | `py` |
-| 103 | Palindrome Number | `py` |
-| 104 | Palindrome Partitioning | `py` |
-| 105 | Palindromic Substrings | `py` |
-| 106 | Partition Equal Subset Sum | `py` |
-| 107 | Pascals Triangle | `py` |
-| 108 | Permutation In String | `py` |
-| 109 | Permutations | `py` |
-| 110 | Plus One | `py` |
-| 111 | Power Of Three | `py` |
-| 112 | Product Of Array Except Self | `py` |
-| 113 | Redundant Connection | `py` |
-| 114 | Regular Expression Matching | `py` |
-| 115 | Remove Duplicates From Sorted Array | `py` |
-| 116 | Remove Duplicates From Sorted List | `py` |
-| 117 | Remove Element | `py` |
-| 118 | Remove Nth Node From End Of List | `py` |
-| 119 | Reorder List | `py` |
-| 120 | Reverse Bits | `py` |
-| 121 | Reverse Integer | `py` |
-| 122 | Reverse Linked List | `py` |
-| 123 | Reverse Nodes In K Group | `py` |
-| 124 | Reverse String | `py` |
-| 125 | Roman To Integer | `py` |
-| 126 | Rotate Array | `py` |
-| 127 | Rotate Image | `py` |
-| 128 | Rotting Oranges | `py` |
-| 129 | Same Tree | `py` |
-| 130 | Search A 2D Matrix | `py` |
-| 131 | Search In Rotated Sorted Array | `py` |
-| 132 | Search Insert Position | `py` |
-| 133 | Serialize And Deserialize Binary Tree | `py` |
-| 134 | Shuffle An Array | `py` |
-| 135 | Single Number | `py` |
-| 136 | Sliding Window Maximum | `py` |
-| 137 | Sqrtx | `py` |
-| 138 | String To Integer Atoi | `py` |
-| 139 | Subsets Ii | `py` |
-| 140 | Subsets | `py` |
-| 141 | Subtree Of Another Tree | `py` |
-| 142 | Sudoku Solver | `py` |
-| 143 | Surrounded Regions | `py` |
-| 144 | Symmetric Tree | `py` |
-| 145 | Task Scheduler | `py` |
-| 146 | Time Based Key Value Store | `py` |
-| 147 | Top K Frequent Elements | `py` |
-| 148 | Trapping Rain Water | `py` |
-| 149 | Two Sum Ii Input Array Is Sorted | `py` |
-| 150 | Two Sum | `py` |
-| 151 | Valid Anagram | `py` |
-| 152 | Valid Palindrome | `py` |
-| 153 | Valid Parentheses | `py` |
-| 154 | Valid Sudoku | `py` |
-| 155 | Validate Binary Search Tree | `py` |
-| 156 | Word Break | `py` |
-| 157 | Word Search Ii | `py` |
-| 158 | Word Search | `py` |
+| 52 | Hand Of Straights | `py` |
+| 53 | House Robber Ii | `py` |
+| 54 | House Robber | `py` |
+| 55 | Implement Trie Prefix Tree | `py` |
+| 56 | Insert Interval | `py` |
+| 57 | Intersection Of Two Arrays Ii | `py` |
+| 58 | Invert Binary Tree | `py` |
+| 59 | Jump Game Ii | `py` |
+| 60 | Jump Game | `py` |
+| 61 | K Closest Points To Origin | `py` |
+| 62 | Koko Eating Bananas | `py` |
+| 63 | Kth Largest Element In A Stream | `py` |
+| 64 | Kth Largest Element In An Array | `py` |
+| 65 | Kth Smallest Element In A Bst | `py` |
+| 66 | Largest Rectangle In Histogram | `py` |
+| 67 | Last Stone Weight | `py` |
+| 68 | Length Of Last Word | `py` |
+| 69 | Letter Combinations Of A Phone Number | `py` |
+| 70 | Linked List Cycle | `py` |
+| 71 | Longest Common Prefix | `py` |
+| 72 | Longest Consecutive Sequence | `py` |
+| 73 | Longest Happy String | `cs` |
+| 74 | Longest Increasing Subsequence | `py` |
+| 75 | Longest Palindromic Substring | `py` |
+| 76 | Longest Repeating Character Replacement | `py` |
+| 77 | Longest Substring Without Repeating Characters | `py` |
+| 78 | Lowest Common Ancestor Of A Binary Search Tree | `py` |
+| 79 | Lru Cache | `py` |
+| 80 | Max Area Of Island | `py` |
+| 81 | Maximum Depth Of Binary Tree | `py` |
+| 82 | Maximum Product Subarray | `py` |
+| 83 | Maximum Subarray | `py` |
+| 84 | Median Of Two Sorted Arrays | `py` |
+| 85 | Merge Intervals | `py` |
+| 86 | Merge K Sorted Lists | `py` |
+| 87 | Merge Sorted Array | `py` |
+| 88 | Merge Two Sorted Lists | `py` |
+| 89 | Min Cost Climbing Stairs | `py` |
+| 90 | Min Stack | `py` |
+| 91 | Minimum Interval To Include Each Query | `py` |
+| 92 | Minimum Window Substring | `py` |
+| 93 | Missing Number | `py` |
+| 94 | Move Zeroes | `py` |
+| 95 | N Queens | `py` |
+| 96 | Next Permutation | `py` |
+| 97 | Non Decreasing Array | `py` |
+| 98 | Non Overlapping Intervals | `py` |
+| 99 | Number Of 1 Bits | `py` |
+| 100 | Number Of Islands | `py` |
+| 101 | Number Of Steps To Reduce A Number In Binary Representation To One | `cs` |
+| 102 | Pacific Atlantic Water Flow | `py` |
+| 103 | Palindrome Linked List | `py` |
+| 104 | Palindrome Number | `py` |
+| 105 | Palindrome Partitioning | `py` |
+| 106 | Palindromic Substrings | `py` |
+| 107 | Partition Equal Subset Sum | `py` |
+| 108 | Pascals Triangle | `py` |
+| 109 | Permutation In String | `py` |
+| 110 | Permutations | `py` |
+| 111 | Plus One | `py` |
+| 112 | Power Of Three | `py` |
+| 113 | Product Of Array Except Self | `py` |
+| 114 | Redundant Connection | `py` |
+| 115 | Regular Expression Matching | `py` |
+| 116 | Remove Duplicates From Sorted Array | `py` |
+| 117 | Remove Duplicates From Sorted List | `py` |
+| 118 | Remove Element | `py` |
+| 119 | Remove Nth Node From End Of List | `py` |
+| 120 | Reorder List | `py` |
+| 121 | Reverse Bits | `py` |
+| 122 | Reverse Integer | `py` |
+| 123 | Reverse Linked List | `py` |
+| 124 | Reverse Nodes In K Group | `py` |
+| 125 | Reverse String | `py` |
+| 126 | Roman To Integer | `py` |
+| 127 | Rotate Array | `py` |
+| 128 | Rotate Image | `py` |
+| 129 | Rotting Oranges | `py` |
+| 130 | Same Tree | `py` |
+| 131 | Search A 2D Matrix | `py` |
+| 132 | Search In Rotated Sorted Array | `py` |
+| 133 | Search Insert Position | `py` |
+| 134 | Serialize And Deserialize Binary Tree | `py` |
+| 135 | Shuffle An Array | `py` |
+| 136 | Single Number | `py` |
+| 137 | Sliding Window Maximum | `py` |
+| 138 | Sqrtx | `py` |
+| 139 | String To Integer Atoi | `py` |
+| 140 | Subsets Ii | `py` |
+| 141 | Subsets | `py` |
+| 142 | Subtree Of Another Tree | `py` |
+| 143 | Sudoku Solver | `py` |
+| 144 | Surrounded Regions | `py` |
+| 145 | Symmetric Tree | `py` |
+| 146 | Task Scheduler | `py` |
+| 147 | Time Based Key Value Store | `py` |
+| 148 | Top K Frequent Elements | `py` |
+| 149 | Trapping Rain Water | `py` |
+| 150 | Two Sum Ii Input Array Is Sorted | `py` |
+| 151 | Two Sum | `py` |
+| 152 | Valid Anagram | `py` |
+| 153 | Valid Palindrome | `py` |
+| 154 | Valid Parentheses | `py` |
+| 155 | Valid Sudoku | `py` |
+| 156 | Validate Binary Search Tree | `py` |
+| 157 | Word Break | `py` |
+| 158 | Word Search Ii | `py` |
+| 159 | Word Search | `py` |
