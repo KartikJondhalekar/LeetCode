@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **160 problems solved**
+Auto-synced via GitHub Actions &middot; **161 problems solved**
 
-_Last updated: 2026-08-10 05:37 UTC_
+_Last updated: 2026-08-11 05:14 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -114,55 +114,56 @@ _Last updated: 2026-08-10 05:37 UTC_
 | 106 | Palindrome Partitioning | `py` |
 | 107 | Palindromic Substrings | `py` |
 | 108 | Partition Equal Subset Sum | `py` |
-| 109 | Pascals Triangle | `py` |
-| 110 | Permutation In String | `py` |
-| 111 | Permutations | `py` |
-| 112 | Plus One | `py` |
-| 113 | Power Of Three | `py` |
-| 114 | Product Of Array Except Self | `py` |
-| 115 | Redundant Connection | `py` |
-| 116 | Regular Expression Matching | `py` |
-| 117 | Remove Duplicates From Sorted Array | `py` |
-| 118 | Remove Duplicates From Sorted List | `py` |
-| 119 | Remove Element | `py` |
-| 120 | Remove Nth Node From End Of List | `py` |
-| 121 | Reorder List | `py` |
-| 122 | Reverse Bits | `py` |
-| 123 | Reverse Integer | `py` |
-| 124 | Reverse Linked List | `py` |
-| 125 | Reverse Nodes In K Group | `py` |
-| 126 | Reverse String | `py` |
-| 127 | Roman To Integer | `py` |
-| 128 | Rotate Array | `py` |
-| 129 | Rotate Image | `py` |
-| 130 | Rotting Oranges | `py` |
-| 131 | Same Tree | `py` |
-| 132 | Search A 2D Matrix | `py` |
-| 133 | Search In Rotated Sorted Array | `py` |
-| 134 | Search Insert Position | `py` |
-| 135 | Serialize And Deserialize Binary Tree | `py` |
-| 136 | Shuffle An Array | `py` |
-| 137 | Single Number | `py` |
-| 138 | Sliding Window Maximum | `py` |
-| 139 | Sqrtx | `py` |
-| 140 | String To Integer Atoi | `py` |
-| 141 | Subsets Ii | `py` |
-| 142 | Subsets | `py` |
-| 143 | Subtree Of Another Tree | `py` |
-| 144 | Sudoku Solver | `py` |
-| 145 | Surrounded Regions | `py` |
-| 146 | Symmetric Tree | `py` |
-| 147 | Task Scheduler | `py` |
-| 148 | Time Based Key Value Store | `py` |
-| 149 | Top K Frequent Elements | `py` |
-| 150 | Trapping Rain Water | `py` |
-| 151 | Two Sum Ii Input Array Is Sorted | `py` |
-| 152 | Two Sum | `py` |
-| 153 | Valid Anagram | `py` |
-| 154 | Valid Palindrome | `py` |
-| 155 | Valid Parentheses | `py` |
-| 156 | Valid Sudoku | `py` |
-| 157 | Validate Binary Search Tree | `py` |
-| 158 | Word Break | `py` |
-| 159 | Word Search Ii | `py` |
-| 160 | Word Search | `py` |
+| 109 | Partition Labels | `py` |
+| 110 | Pascals Triangle | `py` |
+| 111 | Permutation In String | `py` |
+| 112 | Permutations | `py` |
+| 113 | Plus One | `py` |
+| 114 | Power Of Three | `py` |
+| 115 | Product Of Array Except Self | `py` |
+| 116 | Redundant Connection | `py` |
+| 117 | Regular Expression Matching | `py` |
+| 118 | Remove Duplicates From Sorted Array | `py` |
+| 119 | Remove Duplicates From Sorted List | `py` |
+| 120 | Remove Element | `py` |
+| 121 | Remove Nth Node From End Of List | `py` |
+| 122 | Reorder List | `py` |
+| 123 | Reverse Bits | `py` |
+| 124 | Reverse Integer | `py` |
+| 125 | Reverse Linked List | `py` |
+| 126 | Reverse Nodes In K Group | `py` |
+| 127 | Reverse String | `py` |
+| 128 | Roman To Integer | `py` |
+| 129 | Rotate Array | `py` |
+| 130 | Rotate Image | `py` |
+| 131 | Rotting Oranges | `py` |
+| 132 | Same Tree | `py` |
+| 133 | Search A 2D Matrix | `py` |
+| 134 | Search In Rotated Sorted Array | `py` |
+| 135 | Search Insert Position | `py` |
+| 136 | Serialize And Deserialize Binary Tree | `py` |
+| 137 | Shuffle An Array | `py` |
+| 138 | Single Number | `py` |
+| 139 | Sliding Window Maximum | `py` |
+| 140 | Sqrtx | `py` |
+| 141 | String To Integer Atoi | `py` |
+| 142 | Subsets Ii | `py` |
+| 143 | Subsets | `py` |
+| 144 | Subtree Of Another Tree | `py` |
+| 145 | Sudoku Solver | `py` |
+| 146 | Surrounded Regions | `py` |
+| 147 | Symmetric Tree | `py` |
+| 148 | Task Scheduler | `py` |
+| 149 | Time Based Key Value Store | `py` |
+| 150 | Top K Frequent Elements | `py` |
+| 151 | Trapping Rain Water | `py` |
+| 152 | Two Sum Ii Input Array Is Sorted | `py` |
+| 153 | Two Sum | `py` |
+| 154 | Valid Anagram | `py` |
+| 155 | Valid Palindrome | `py` |
+| 156 | Valid Parentheses | `py` |
+| 157 | Valid Sudoku | `py` |
+| 158 | Validate Binary Search Tree | `py` |
+| 159 | Word Break | `py` |
+| 160 | Word Search Ii | `py` |
+| 161 | Word Search | `py` |
