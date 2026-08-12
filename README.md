@@ -1,8 +1,8 @@
 # LeetCode Solutions
 
-Auto-synced via GitHub Actions &middot; **161 problems solved**
+Auto-synced via GitHub Actions &middot; **162 problems solved**
 
-_Last updated: 2026-08-11 05:14 UTC_
+_Last updated: 2026-08-12 05:40 UTC_
 
 | # | Problem | Language |
 |---|---------|----------|
@@ -162,8 +162,9 @@ _Last updated: 2026-08-11 05:14 UTC_
 | 154 | Valid Anagram | `py` |
 | 155 | Valid Palindrome | `py` |
 | 156 | Valid Parentheses | `py` |
-| 157 | Valid Sudoku | `py` |
-| 158 | Validate Binary Search Tree | `py` |
-| 159 | Word Break | `py` |
-| 160 | Word Search Ii | `py` |
-| 161 | Word Search | `py` |
+| 157 | Valid Parenthesis String | `py` |
+| 158 | Valid Sudoku | `py` |
+| 159 | Validate Binary Search Tree | `py` |
+| 160 | Word Break | `py` |
+| 161 | Word Search Ii | `py` |
+| 162 | Word Search | `py` |
